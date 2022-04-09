@@ -1,0 +1,96 @@
+@use "../../styles/devices";
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("../../../public/fonts/lovelo.otf");
+}
+
+.aboutContainer {
+  display: flex;
+  margin: 10% 0;
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+
+  @media screen and (max-width: devices.$tablet) {
+    flex-direction: column;
+  }
+}
+
+.aboutBg {
+  width: 562px;
+  height: 411px;
+  background-image: linear-gradient(#003a36, #01a89e);
+  margin: 0 auto 0 0;
+  border-radius: 0 90px 90px 0;
+
+  @media screen and (max-width: devices.$tablet) {
+    width: 385px;
+    height: 280px;
+    margin-top: 20%;
+  }
+}
+
+.aboutImage {
+  position: absolute;
+  width: 507px;
+
+  @media screen and (max-width: devices.$tablet) {
+    width: 400px;
+  }
+}
+
+.aboutTxt {
+  padding: 16px;
+  font-size: 1.25rem;
+  line-height: 2;
+  font-weight: 300;
+  max-width: 60%;
+
+  h2 {
+    color: #01a89e;
+    font-family: "Lovelo", sans-serif;
+    font-size: 2rem;
+    position: relative;
+    border: 0;
+    transition: border 2s;
+
+    @keyframes move {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 18%;
+      }
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      border-bottom: 20px solid #ffffff1c;
+      width: 18%;
+      position: absolute;
+      top: 40px;
+
+      -webkit-animation: move 3s ease;
+      -moz-animation: move 3s ease;
+      -ms-animation: move 3s ease;
+      -o-animation: move 3s ease;
+      animation: move 3s ease;
+    }
+  }
+
+  p {
+    margin: 6px;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: devices.$tablet) {
+    max-width: 100%;
+    text-align: justify;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

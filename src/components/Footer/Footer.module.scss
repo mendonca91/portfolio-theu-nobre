@@ -1,0 +1,120 @@
+@use "../../styles/devices";
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("../../../public/fonts/lovelo.otf");
+}
+
+.footerDiv {
+  align-items: flex-start;
+  display: flex;
+  gap: 5%;
+  margin: 0 5%;
+  justify-content: center;
+
+  @media screen and (max-width: devices.$tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footerLogo {
+  width: 20%;
+
+  @media screen and (max-width: devices.$tablet) {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+.socialLinks {
+  width: 35%;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-bottom: 5px;
+      border: 2px solid var(--theu-bg);
+      margin: 0 0.2rem;
+      width: 3.15em;
+      height: 3.15em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--theu-bg);
+
+        a {
+          color: #fff;
+        }
+      }
+
+      a {
+        color: var(--theu-bg);
+
+        svg {
+          width: 21px;
+          height: 26px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: devices.$tablet) {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+.footerAction {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  button {
+    padding: 16px;
+    background-color: var(--theu-bg);
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #027c75;
+    }
+  }
+  @media screen and (max-width: devices.$tablet) {
+    width: 50%;
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.reservedTxt {
+  text-align: center;
+  margin-top: 2rem;
+  color: #484848;
+}

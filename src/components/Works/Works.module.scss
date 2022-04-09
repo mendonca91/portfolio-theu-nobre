@@ -1,0 +1,98 @@
+@use "../../styles/devices";
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("../../../public/fonts/lovelo.otf");
+}
+
+.workContainer {
+  display: flex;
+  margin-top: 5%;
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: max-content;
+  flex-direction: column;
+
+  h2 {
+    color: #01a89e;
+    font-family: "Lovelo", sans-serif;
+    font-size: 2rem;
+    position: relative;
+    border: 0;
+    transition: border 2s;
+    margin: 2% 5%;
+
+    @keyframes move {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 16%;
+      }
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      border-bottom: 20px solid #ffffff28;
+      width: 16%;
+      position: absolute;
+      top: 20px;
+
+      -webkit-animation: move 1s ease;
+      -moz-animation: move 1s ease;
+      -ms-animation: move 1s ease;
+      -o-animation: move 1s ease;
+      animation: move 1s ease;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      padding: 6px 12px;
+      transition: all ease-in 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.25rem;
+        transition: all 0.3s;
+
+        &:hover {
+          border-bottom: 2px solid #01a89e;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: devices.$tablet) {
+    ul {
+      li {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 8px auto;
+
+  @media screen and (max-width: devices.$tablet) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,105 @@
+@use "devices";
+
+:root {
+  --theu-bg: #01a89e;
+  --blue-300: #0b85cc;
+  --blue-800: #080f27;
+  --gray-200: #efefef;
+  --gray-300: #707070;
+  --white: #fff;
+  --roboto-font: "Roboto", sans-serif;
+  --rubik-font: "Rubik", sans-serif;
+  --montserrat-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  min-height: -webkit-fill-available;
+}
+
+body {
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+
+  &.fullHeight {
+    height: 100%;
+  }
+}
+
+.btn-primary {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--white);
+  border-radius: 999px;
+  background: transparent;
+  height: 60px;
+  padding: 0 1rem;
+}
+
+.orangeBackground {
+  background: var(--orange-credihome);
+}
+
+.blueBackground {
+  background: var(--blue-credihome);
+}
+
+.outlined {
+  border: 2px solid var(--white);
+  background: transparent;
+  transition: 0.2s ease background-color, 0.2s ease border;
+
+  &:hover {
+    background: var(--orange-credihome);
+    color: var(--white);
+    border: 2px solid var(--orange-credihome);
+  }
+}
+
+@media screen and (max-width: devices.$laptop) {
+}
+
+@media screen and (max-width: devices.$tablet) {
+  .container {
+    padding: 30px;
+  }
+}

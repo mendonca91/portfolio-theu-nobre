@@ -1,0 +1,30 @@
+@use "../../styles/devices";
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("../../../public/fonts/lovelo.otf");
+}
+
+.cardContainer {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: transparent;
+
+    img {
+      max-width: 250px;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+
+      &:hover {
+        transition: transform 500ms ease;
+        transform: scale(1.03);
+      }
+    }
+  }
+}

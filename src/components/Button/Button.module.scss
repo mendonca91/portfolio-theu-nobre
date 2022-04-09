@@ -1,0 +1,21 @@
+@use "../../styles/devices";
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("../../../public/fonts/lovelo.otf");
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+
+  button {
+    background-color: var(--theu-bg);
+    color: #fff;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: 12px;
+  }
+}
