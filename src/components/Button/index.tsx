@@ -1,14 +1,17 @@
+import Link from "next/link";
 import React from "react";
 import styles from "./Button.module.scss";
 
 interface Button {
-  onclick: () => void;
   label: string;
+  url: string;
 }
 
-const ButtonAction = ({ onclick, label }: Button) => (
+const ButtonAction = ({ url, label }: Button) => (
   <div className={styles.buttonContainer}>
-    <button onClick={onclick}>{label}</button>
+    <Link href={`${url}`}>
+      <a target="_blank">{label}</a>
+    </Link>
   </div>
 );
 

@@ -22,7 +22,10 @@ const Home: NextPage = () => {
       <div className={`${styles.logo} container`}>
         <div>
           <img src="/assets/mn2.png" alt="Logo do site Matheus Nobre" />
-          <ButtonAction onclick={handleClick} label="Quero fazer meu vídeo" />
+          <ButtonAction
+            url="https://forms.gle/BSyCu6nftk7CMcus6"
+            label="Quero fazer meu vídeo"
+          />
         </div>
 
         <video

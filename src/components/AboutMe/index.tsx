@@ -45,8 +45,10 @@ const AboutMe: React.FC = () => {
           literalmente ser sobre aquilo. Aqui contei um pequeno trecho da minha
           história para te inspirar a me deixar contar um pouco da sua.
         </p>
-        <p> Vamos trocar uma ideia!</p>
-        <ButtonAction onclick={handleClick} label="Quero fazer meu vídeo" />
+        <ButtonAction
+          url="https://api.whatsapp.com/send?phone=557999260877&text=Ol%C3%A1%2C%20quero%20ter%20minha%20hist%C3%B3ria%20contada%20em%20v%C3%ADdeo"
+          label="Vamos trocar uma ideia!"
+        />
       </div>
     </section>
   );

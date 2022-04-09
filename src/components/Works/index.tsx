@@ -68,7 +68,10 @@ const Works: React.FC = () => {
               )
             )}
       </div>
-      <ButtonAction onclick={handleClick} label="Quero fazer meu vídeo" />
+      <ButtonAction
+        url="https://forms.gle/BSyCu6nftk7CMcus6"
+        label="Quero fazer meu vídeo"
+      />
       {openModal && <Modal close={() => handleCloseModal()} videoSrc={""} />}
     </section>
   );

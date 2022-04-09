@@ -65,6 +65,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 5%;
+
   img {
     max-width: 50px;
   }
@@ -76,6 +77,12 @@
 
     svg {
       font-size: 40px;
+    }
+
+    span {
+      color: var(--blue-300);
+      font-weight: bold;
+      font-size: 30px;
     }
   }
 }

@@ -2,9 +2,10 @@ import React from "react";
 import styles from "./Skills.module.scss";
 import { SkillsItens } from "./Skills";
 import ButtonAction from "../Button";
+import { useRouter } from "next/router";
 
 const Skills = () => {
-  const handleClick = () => {};
+  const router = useRouter();
 
   return (
     <section id="skills" className={styles.skillsContainer}>
@@ -23,7 +24,10 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <ButtonAction onclick={handleClick} label="Quero fazer meu vídeo" />
+      <ButtonAction
+        url="https://forms.gle/BSyCu6nftk7CMcus6"
+        label="Quero fazer meu vídeo"
+      />
     </section>
   );
 };

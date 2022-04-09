@@ -66,7 +66,7 @@ const Header = () => {
               </Link>
             </li>
             <li className={styles.navItem}>
-              <a href="#">
+              <a href="https://forms.gle/BSyCu6nftk7CMcus6" target={"_blank"}>
                 <span> Quero ter minha história contada em vídeo</span>
               </a>
             </li>
@@ -82,22 +82,64 @@ const Header = () => {
             <nav className={styles.navHeader}>
               <ul className={styles.navItens}>
                 <li className={styles.navItem}>
-                  <a href="about-me">Sobre mim</a>
+                  <Link
+                    activeClass="active"
+                    to="about-me"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Sobre mim
+                  </Link>
                 </li>
                 <li className={styles.navItem}>
-                  <a href="portfolio">Portfólio</a>
+                  <Link
+                    activeClass="active"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Portfólio
+                  </Link>
                 </li>
                 <li className={styles.navItem}>
-                  <a href="#">Clientes</a>
+                  <Link
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Tipos de vídeo
+                  </Link>
                 </li>
                 <li className={styles.navItem}>
-                  <a href="#">
-                    <span> Quero ter minha história contada em vídeo</span>
+                  <Link
+                    activeClass="active"
+                    to="clients"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Clientes
+                  </Link>
+                </li>
+                <li className={styles.navItem}>
+                  <a
+                    href="https://forms.gle/BSyCu6nftk7CMcus6"
+                    target={"_blank"}
+                  >
+                    <strong> Quero ter minha história contada em vídeo</strong>
                   </a>
                 </li>
               </ul>
               <button type="button" onClick={() => setIsOpen(false)}>
-                <FaXbox />
+                <span>X</span>
               </button>
             </nav>
           )}
