@@ -89,6 +89,7 @@ const Header = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
+                    onClick={() => setIsOpen(false)}
                   >
                     Sobre mim
                   </Link>
@@ -101,6 +102,7 @@ const Header = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
+                    onClick={() => setIsOpen(false)}
                   >
                     Portfólio
                   </Link>
@@ -113,6 +115,7 @@ const Header = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
+                    onClick={() => setIsOpen(false)}
                   >
                     Tipos de vídeo
                   </Link>
@@ -125,6 +128,7 @@ const Header = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
+                    onClick={() => setIsOpen(false)}
                   >
                     Clientes
                   </Link>
@@ -133,6 +137,7 @@ const Header = () => {
                   <a
                     href="https://forms.gle/BSyCu6nftk7CMcus6"
                     target={"_blank"}
+                    onClick={() => setIsOpen(false)}
                   >
                     <strong> Quero ter minha história contada em vídeo</strong>
                   </a>
