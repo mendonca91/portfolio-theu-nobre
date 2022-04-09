@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { FaWhatsapp } from "react-icons/fa";
 import AboutMe from "../components/AboutMe";
 import ButtonAction from "../components/Button";
 import Clients from "../components/Clients";
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
       image="/assets/camera.png"
     >
       <Header />
-      <div className={`${styles.logo} container`}>
+      <div id="header" className={`${styles.logo} container`}>
         <div>
           <img src="/assets/mn2.png" alt="Logo do site Matheus Nobre" />
           <ButtonAction
@@ -37,12 +38,23 @@ const Home: NextPage = () => {
         >
           <source src="./assets/demo.prproj.mp4" type="video/mp4" />
         </video>
+
+        <div className={styles.linkWhats}>
+          <a
+            href="https://api.whatsapp.com/send?phone=557999260877&text=Ol%C3%A1%2C%20quero%20ter%20minha%20hist%C3%B3ria%20contada%20em%20v%C3%ADdeo"
+            target={"_blank"}
+          >
+            <FaWhatsapp />
+            <span>Fala comigo!</span>
+          </a>
+        </div>
       </div>
 
       <AboutMe />
       <Works />
       <Skills />
       <Clients />
+
       <Footer />
     </Page>
   );

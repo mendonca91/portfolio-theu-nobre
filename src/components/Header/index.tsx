@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { FaBars, FaXbox } from "react-icons/fa";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import styles from "./Header.module.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const window = useWindowSize();
