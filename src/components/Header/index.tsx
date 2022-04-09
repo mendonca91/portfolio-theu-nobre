@@ -5,10 +5,12 @@ import React, { useState } from "react";
 import { FaBars, FaXbox } from "react-icons/fa";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import styles from "./Header.module.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
   const window = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       {window.width && window.width > 1250 ? (
@@ -16,16 +18,52 @@ const Header = () => {
           <img src="./assets/MN-branco.png" alt="" />
           <ul className={styles.navItens}>
             <li className={styles.navItem}>
-              <a href="#about-me">Sobre mim</a>
+              <Link
+                activeClass="active"
+                to="about-me"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Sobre mim
+              </Link>
             </li>
             <li className={styles.navItem}>
-              <a href="#portfolio">Portfólio</a>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Portfólio
+              </Link>
             </li>
             <li className={styles.navItem}>
-              <a href="#skills">Tipos de vídeo</a>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Tipos de vídeo
+              </Link>
             </li>
             <li className={styles.navItem}>
-              <a href="#clients">Clientes</a>
+              <Link
+                activeClass="active"
+                to="clients"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Clientes
+              </Link>
             </li>
             <li className={styles.navItem}>
               <a href="#">
