@@ -7,7 +7,7 @@ const Skills = () => {
   const handleClick = () => {};
 
   return (
-    <section className={styles.skillsContainer}>
+    <section id="skills" className={styles.skillsContainer}>
       <h2 data-aos="fade-right">Tipos de filmagens</h2>
       <div className={styles.skillsContent}>
         {SkillsItens.map((item) => (

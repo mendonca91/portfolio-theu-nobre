@@ -28,7 +28,7 @@ const Works: React.FC = () => {
 
   const handleClick = () => {};
   return (
-    <section className={styles.workContainer}>
+    <section id="portfolio" className={styles.workContainer}>
       <h2 data-aos="fade-right">Portfólio</h2>
 
       <nav>

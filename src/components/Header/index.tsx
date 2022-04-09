@@ -16,13 +16,16 @@ const Header = () => {
           <img src="./assets/MN-branco.png" alt="" />
           <ul className={styles.navItens}>
             <li className={styles.navItem}>
-              <a href="#">Sobre mim</a>
+              <a href="#about-me">Sobre mim</a>
             </li>
             <li className={styles.navItem}>
-              <a href="#">Portfólio</a>
+              <a href="#portfolio">Portfólio</a>
             </li>
             <li className={styles.navItem}>
-              <a href="#">Clientes</a>
+              <a href="#skills">Tipos de vídeo</a>
+            </li>
+            <li className={styles.navItem}>
+              <a href="#clients">Clientes</a>
             </li>
             <li className={styles.navItem}>
               <a href="#">
@@ -41,10 +44,10 @@ const Header = () => {
             <nav className={styles.navHeader}>
               <ul className={styles.navItens}>
                 <li className={styles.navItem}>
-                  <a href="#">Sobre mim</a>
+                  <a href="about-me">Sobre mim</a>
                 </li>
                 <li className={styles.navItem}>
-                  <a href="#">Portfólio</a>
+                  <a href="portfolio">Portfólio</a>
                 </li>
                 <li className={styles.navItem}>
                   <a href="#">Clientes</a>

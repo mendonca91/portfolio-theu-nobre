@@ -7,7 +7,7 @@ import React from "react";
 import styles from "./Clients.module.scss";
 
 const Clients = () => (
-  <div className={styles.clientContainer}>
+  <div id="clients" className={styles.clientContainer}>
     <div className={styles.clientContent}>
       <h2>Clientes</h2>
       <div className={styles.clientList}>

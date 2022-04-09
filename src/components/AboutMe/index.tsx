@@ -15,7 +15,7 @@ const AboutMe: React.FC = () => {
   const handleClick = () => {};
 
   return (
-    <section className={styles.aboutContainer}>
+    <section id="about-me" className={styles.aboutContainer}>
       <div className={styles.aboutBg}></div>
       <div className={styles.aboutImage}>
         <Image
