@@ -23,6 +23,7 @@
         color: #fff;
         font-weight: 400;
         font-size: 1.4rem;
+        cursor: pointer;
 
         span {
           color: var(--blue-300);
@@ -47,6 +48,7 @@
       li {
         a {
           color: var(--blue-300);
+          cursor: pointer;
         }
       }
     }
