@@ -5,7 +5,7 @@ export const SkillsItens = [
     id: 1,
     title: "Fashion Film",
     alt: "Foto ilustrando habilidade com fashion film",
-    src: "/assets/Films/fashion.png",
+    src: "/assets/Posters/fashion.png",
     description:
       "Produções de moda com uma pegada conceitual para lojas, revistas, eventos e também divulgação pessoal. Maior foco nos modelos e nos produtos.",
   },
@@ -13,7 +13,7 @@ export const SkillsItens = [
     id: 2,
     title: "Sports Film",
     alt: "Foto ilustrando habilidade com sports film",
-    src: "/assets/Films/sports.png",
+    src: "/assets/Posters/sports.png",
     description:
       "Vídeos de movimentação, atividade física, esportes. Esse é para quem quer deixar registrada aquela altinha na praia com os amigos – ou claro, qualquer outra atividade em qualquer outro lugar",
   },
@@ -21,7 +21,7 @@ export const SkillsItens = [
     id: 3,
     title: "People Film",
     alt: "Foto ilustrando habilidade com people film",
-    src: "/assets/Films/people.png",
+    src: "/assets/Posters/people.png",
     description:
       "Sua intenção é mostrar um pouco da rotina como profissional da sua área? Esse é o tipo de vídeo ideal! Vamos fazer takes das suas principais atividades e registrar seus melhores momentos de atuação.",
   },
@@ -29,7 +29,7 @@ export const SkillsItens = [
     id: 4,
     title: "Institucional",
     alt: "Foto ilustrando  habilidade com criação de vídeo institucional",
-    src: "/assets/Films/institucional.png",
+    src: "/assets/Posters/institucional.png",
     description:
       "Ideal para empresas que querem divulgar seu negócio, sejam serviços, produtos ou infraestrutura. Filmes para a promoção de imagem com ar mais sério e sofisticado.",
   },
@@ -37,7 +37,7 @@ export const SkillsItens = [
     id: 5,
     title: "Conteúdo",
     alt: "Foto ilustrando  habilidade com criação de vídeo sobre diversos conteúdos",
-    src: "/assets/Films/conteudo.png",
+    src: "/assets/Posters/conteudo.png",
     description:
       "Esse tipo de vídeo é interessante para quem tem algum canal em rede audiovisual ou produz conteúdo para a internet e tem vontade deixar o trabalho com uma cara mais profissional",
   },
@@ -45,7 +45,7 @@ export const SkillsItens = [
     id: 6,
     title: "Drone",
     alt: "Foto ilustrando habilidade com filmagem utilizando drones",
-    src: "/assets/Films/drone.png",
+    src: "/assets/Posters/drone.png",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sed alias ratione iure adipisci Doloribus illo, sunt natus at iste velit praesentium",
   },

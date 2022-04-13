@@ -4,13 +4,13 @@ export const WorksCards = [
   {
     id: 1,
     alt: "Foto ilustrando vídeo de esporte",
-    src: "/assets/esporte.jpg",
+    src: "/assets/Posters/rafa-poster.png",
     type: "Esportes",
   },
   {
     id: 6,
     alt: "Foto ilustrando vídeo de barbearia",
-    src: "/assets/barbearia.jpg",
+    src: "/assets/esporte.jpg",
     type: "Beleza",
   },
   {

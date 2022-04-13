@@ -6,19 +6,28 @@
 import React from "react";
 import styles from "./Modal.module.scss";
 
+import { Videos } from "./video";
 interface IModal {
   close: () => void;
-  videoSrc: string;
 }
 
-const Modal = ({ close, videoSrc }: IModal) => (
+const Modal = ({ close }: IModal) => (
   <div className={styles.modalContainer}>
     <div className={styles.modalContent}>
       <button onClick={() => close()}>x</button>
       <div className={styles.modalVideo}>
-        <video autoPlay={true} controls width="500px" height="500px" loop>
-          <source src={videoSrc} type="video/mp4" />
-        </video>
+        {Videos.filter((video) => video.id === 1).map((filteredVideo) => (
+          <video
+            key={filteredVideo.id}
+            autoPlay={true}
+            controls
+            width="500px"
+            height="500px"
+            loop
+          >
+            <source src={filteredVideo.src} type="video/mp4" />
+          </video>
+        ))}
       </div>
     </div>
   </div>
