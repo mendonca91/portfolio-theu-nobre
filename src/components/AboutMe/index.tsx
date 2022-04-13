@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import styles from "./About.module.scss";
 
-import theu from "../../../public/assets/camera.png";
+import theu from "../../../public/assets/theu-principal.png";
 import ButtonAction from "../Button";
 
 const AboutMe: React.FC = () => {
