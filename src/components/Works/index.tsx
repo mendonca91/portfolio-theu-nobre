@@ -72,7 +72,7 @@ const Works: React.FC = () => {
         url="https://forms.gle/BSyCu6nftk7CMcus6"
         label="Quero fazer meu vídeo"
       />
-      {openModal && <Modal close={() => handleCloseModal()} videoSrc={""} />}
+      {openModal && <Modal close={() => handleCloseModal()} />}
     </section>
   );
 };
