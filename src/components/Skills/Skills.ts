@@ -41,5 +41,4 @@ export const SkillsItens = [
     description:
       "Esse tipo de vídeo é interessante para quem tem algum canal em rede audiovisual ou produz conteúdo para a internet e tem vontade deixar o trabalho com uma cara mais profissional",
   },
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sed alias ratione iure adipisci Doloribus illo, sunt natus at iste velit praesentium",
 ];
