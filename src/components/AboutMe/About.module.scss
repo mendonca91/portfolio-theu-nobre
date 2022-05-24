@@ -38,7 +38,8 @@
   margin-left: 90px;
 
   @media screen and (max-width: devices.$tablet) {
-    width: 400px;
+    width: 320px;
+    margin-left: 0px;
   }
 }
 

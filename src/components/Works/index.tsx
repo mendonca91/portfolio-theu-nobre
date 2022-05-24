@@ -47,9 +47,6 @@ const Works: React.FC = () => {
           <li>
             <a onClick={() => handleFilterType("Beleza")}>Beleza</a>
           </li>
-          <li>
-            <a onClick={() => handleFilterType("Drone")}>Drone</a>
-          </li>
         </ul>
       </nav>
       <div data-aos="fade-up" className={styles.cardList}>
