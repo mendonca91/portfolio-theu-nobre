@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <div className={styles.overlay} />
       <div id="header" className={`${styles.theuContainer} container`}>
         <div>
-          <video autoPlay muted loop className={styles.video}>
+          <video autoPlay muted loop playsInline className={styles.video}>
             <source src="/assets/Films/rafaela.mp4" type="video/mp4" />
           </video>
           <div className={styles.content}>
