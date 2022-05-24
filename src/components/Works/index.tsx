@@ -9,13 +9,15 @@ import ButtonAction from "../Button";
 const Works: React.FC = () => {
   const [types, setTypes] = useState("");
   const [openModal, setOpenModal] = useState(false);
+  const [playedVideo, setPlayedVideo] = useState(null);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const handleOpenModal = () => {
+  const handleOpenModal = (id: number) => {
     setOpenModal(true);
+    setPlayedVideo(id);
   };
 
   const handleCloseModal = () => {
@@ -45,6 +47,9 @@ const Works: React.FC = () => {
           <li>
             <a onClick={() => handleFilterType("Beleza")}>Beleza</a>
           </li>
+          <li>
+            <a onClick={() => handleFilterType("Drone")}>Drone</a>
+          </li>
         </ul>
       </nav>
       <div data-aos="fade-up" className={styles.cardList}>
@@ -52,7 +57,7 @@ const Works: React.FC = () => {
           ? WorksCards.map((work) => (
               <Card
                 key={work.id}
-                openModal={() => handleOpenModal()}
+                openModal={() => handleOpenModal(work.id)}
                 videoImage={work.src}
                 videoDescription={work.alt}
               />
@@ -61,7 +66,7 @@ const Works: React.FC = () => {
               (filteredWork) => (
                 <Card
                   key={filteredWork.id}
-                  openModal={() => handleOpenModal()}
+                  openModal={() => handleOpenModal(filteredWork.id)}
                   videoImage={filteredWork.src}
                   videoDescription={filteredWork.alt}
                 />
@@ -72,7 +77,7 @@ const Works: React.FC = () => {
         url="https://forms.gle/BSyCu6nftk7CMcus6"
         label="Quero fazer meu vídeo"
       />
-      {openModal && <Modal close={() => handleCloseModal()} />}
+      {openModal && <Modal id={playedVideo} close={() => handleCloseModal()} />}
     </section>
   );
 };

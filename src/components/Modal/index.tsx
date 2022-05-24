@@ -8,15 +8,16 @@ import styles from "./Modal.module.scss";
 
 import { Videos } from "./video";
 interface IModal {
+  id: number;
   close: () => void;
 }
 
-const Modal = ({ close }: IModal) => (
+const Modal = ({ id, close }: IModal) => (
   <div className={styles.modalContainer}>
     <div className={styles.modalContent}>
       <button onClick={() => close()}>x</button>
       <div className={styles.modalVideo}>
-        {Videos.filter((video) => video.id === 1).map((filteredVideo) => (
+        {Videos.filter((video) => video.id === id).map((filteredVideo) => (
           <video
             key={filteredVideo.id}
             autoPlay={true}

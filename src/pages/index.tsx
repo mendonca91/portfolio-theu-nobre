@@ -9,9 +9,11 @@ import Header from "../components/Header";
 import Page from "../components/Page";
 import Skills from "../components/Skills";
 import Works from "../components/Works";
+import { useWindowSize } from "../hooks/useWindowSize";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
+  const window = useWindowSize();
   return (
     <Page
       title="Matheus Nobre"
@@ -23,11 +25,18 @@ const Home: NextPage = () => {
       <div id="header" className={`${styles.theuContainer} container`}>
         <div>
           <video autoPlay muted loop className={styles.video}>
-            <source src="/assets/rafaela.mp4" type="video/mp4" />
+            <source src="/assets/Films/rafaela.mp4" type="video/mp4" />
           </video>
           <div className={styles.content}>
             <div className={styles.theuNobre}>
-              <img src="/assets/theu-principal.png" alt="Matheus Nobre" />
+              {window.width && window.width < 991 ? (
+                <img
+                  src="/assets/theu-principal-mobile.png"
+                  alt="Matheus Nobre"
+                />
+              ) : (
+                <img src="/assets/theu-principal.png" alt="Matheus Nobre" />
+              )}
             </div>
             <div className={styles.logo}>
               <img src="/assets/mn2.png" alt="Logo do site Matheus Nobre" />

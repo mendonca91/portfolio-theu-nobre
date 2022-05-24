@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import styles from "./About.module.scss";
 
-import theu from "../../../public/assets/theu-principal.png";
+import theu from "../../../public/assets/Theu.png";
 import ButtonAction from "../Button";
 
 const AboutMe: React.FC = () => {
@@ -12,7 +12,6 @@ const AboutMe: React.FC = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const handleClick = () => {};
 
   return (
     <section id="about-me" className={styles.aboutContainer}>
